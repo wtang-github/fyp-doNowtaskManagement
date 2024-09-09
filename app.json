@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "final-doNow",
+    "slug": "fyp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/alarm-clock_23f0.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ohlilac.finaldoNow"
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "package": "com.ohlilac.finaldoNow"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9be99fb7-541a-4ba7-823c-2d4a68a6518e"
+      }
+    },
+    "plugins": [
+      "@react-native-google-signin/google-signin",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "34.0.0"
+          },
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "node_modules/@expo-google-fonts/mali/Mali_500Medium.ttf",
+            "node_modules/@expo-google-fonts/mallanna/Mallanna_400Regular.ttf",
+            "node_modules/@expo-google-fonts/roboto/Roboto_500Medium.ttf"
+          ]
+        }
+      ]
+    ],
+    "owner": "getthisdone"
+  }
+}
